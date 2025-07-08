@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide Trình Bày - So Sánh Giá Gói Sinh</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #ffffff;
+            color: #1a1a1a;
+            overflow: hidden;
+        }
+
+        .slideshow-container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .slide {
+            display: none;
+            width: 100%;
+            height: 100%;
+            padding: 60px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .slide.active {
+            display: flex;
+        }
+
+        .slide h1 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            letter-spacing: -0.02em;
+        }
+
+        .slide h2 {
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 40px;
+            letter-spacing: -0.01em;
+        }
+
+        .slide h3 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .slide p {
+            font-size: 1.3rem;
+            line-height: 1.6;
+            color: #666;
+            max-width: 800px;
+            margin-bottom: 20px;
+        }
+
+        .chart-container {
+            width: 80%;
+            height: 500px;
+            margin: 40px 0;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            max-width: 1000px;
+            margin: 40px 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 1.1rem;
+            color: #666;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .comparison-table {
+            width: 90%;
+            max-width: 1200px;
+            border-collapse: collapse;
+            margin: 40px 0;
+            background: #ffffff;
+            border: 1px solid #e5e5e5;
+        }
+
+        .comparison-table th,
+        .comparison-table td {
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #e5e5e5;
+        }
+
+        .comparison-table th {
+            background: #f8f9fa;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .comparison-table td {
+            font-size: 1rem;
+        }
+
+        .price-highlight {
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 15px;
+            z-index: 1000;
+        }
+
+        .nav-btn {
+            background: #1a1a1a;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn:hover {
+            background: #333;
+            transform: translateY(-2px);
+        }
+
+        .nav-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .slide-counter {
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            background: rgba(26, 26, 26, 0.1);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .key-insights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            width: 100%;
+            max-width: 1200px;
+            margin: 40px 0;
+        }
+
+        .insight-card {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: left;
+        }
+
+        .insight-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #1a1a1a;
+        }
+
+        .insight-text {
+            font-size: 1rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        .download-section {
+            margin-top: 40px;
+        }
+
+        .download-btn {
+            background: #007AFF;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 10px;
+            transition: all 0.2s ease;
+        }
+
+        .download-btn:hover {
+            background: #0056CC;
+            transform: translateY(-2px);
+        }
+
+        @media print {
+            .navigation, .slide-counter {
+                display: none;
+            }
+            
+            .slide {
+                page-break-after: always;
+                height: 100vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="slideshow-container">
+        <!-- Slide 1: Title -->
+        <div class="slide active">
+            <h1>So Sánh Giá Gói Sinh</h1>
+            <p>Phân tích chi tiết giá cả giữa 3 bệnh viện hàng đầu</p>
+            <div class="stats-row">
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">Bệnh Viện</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24+</div>
+                    <div class="stat-label">Gói Dịch Vụ</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">4</div>
+                    <div class="stat-label">Loại Sinh</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 2: Overview Chart -->
+        <div class="slide">
+            <h2>Tổng Quan Giá Gói Sinh</h2>
+            <div class="chart-container">
+                <canvas id="overviewChart"></canvas>
+            </div>
+            <p>So sánh giá trung bình theo loại dịch vụ sinh</p>
+        </div>
+
+        <!-- Slide 3: Comparison Table -->
+        <div class="slide">
+            <h2>Bảng So Sánh Chi Tiết</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Loại Dịch Vụ</th>
+                        <th>BV Hạnh Phúc</th>
+                        <th>Hoàn Mỹ Sài Gòn</th>
+                        <th>Hoàn Mỹ Thủ Đức</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Sinh Thường</strong></td>
+                        <td class="price-highlight">29.9M</td>
+                        <td class="price-highlight">19.0M</td>
+                        <td class="price-highlight">30.1M</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mổ Lần 1</strong></td>
+                        <td class="price-highlight">39.9M</td>
+                        <td class="price-highlight">23.0M</td>
+                        <td class="price-highlight">40.0M</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mổ Lần 2</strong></td>
+                        <td class="price-highlight">44.0M</td>
+                        <td class="price-highlight">25.0M</td>
+                        <td class="price-highlight">41.1M</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Mổ Lần 3</strong></td>
+                        <td class="price-highlight">47.6M</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Slide 4: Key Insights -->
+        <div class="slide">
+            <h2>Những Phát Hiện Chính</h2>
+            <div class="key-insights">
+                <div class="insight-card">
+                    <div class="insight-title">Giá Cạnh Tranh Nhất</div>
+                    <div class="insight-text">Hoàn Mỹ Sài Gòn có mức giá thấp nhất cho tất cả các loại dịch vụ, từ 19M đến 25M VNĐ.</div>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-title">Dịch Vụ Cao Cấp</div>
+                    <div class="insight-text">BV Hạnh Phúc là nơi duy nhất cung cấp dịch vụ mổ lần 3, với mức giá 47.6M VNĐ.</div>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-title">Lựa Chọn Đa Dạng</div>
+                    <div class="insight-text">Hoàn Mỹ Thủ Đức có nhiều gói dịch vụ nhất với 10+ lựa chọn khác nhau.</div>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-title">Chênh Lệch Giá</div>
+                    <div class="insight-text">Chênh lệch giá lớn nhất giữa các bệnh viện là 21M VNĐ cho dịch vụ mổ lần 1.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Recommendations -->
+        <div class="slide">
+            <h2>Khuyến Nghị</h2>
+            <div class="key-insights">
+                <div class="insight-card">
+                    <div class="insight-title">Cho Ngân Sách Hạn Chế</div>
+                    <div class="insight-text">Hoàn Mỹ Sài Gòn là lựa chọn tối ưu với giá cả phải chăng và chất lượng đảm bảo.</div>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-title">Cho Dịch Vụ Cao Cấp</div>
+                    <div class="insight-text">BV Hạnh Phúc phù hợp cho khách hàng cần dịch vụ đặc biệt và sẵn sàng chi trả cao.</div>
+                </div>
+                <div class="insight-card">
+                    <div class="insight-title">Cho Sự Linh Hoạt</div>
+                    <div class="insight-text">Hoàn Mỹ Thủ Đức cung cấp nhiều lựa chọn gói với mức giá từ trung bình đến cao.</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6: Thank You -->
+        <div class="slide">
+            <h1>Cảm Ơn</h1>
+            <p>Báo cáo phân tích so sánh giá gói sinh</p>
+            <div class="download-section">
+                <button class="download-btn" onclick="downloadPDF()">Tải PDF</button>
+                <button class="download-btn" onclick="window.print()">In Slide</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="slide-counter">
+        <span id="currentSlide">1</span> / <span id="totalSlides">6</span>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-btn" id="prevBtn" onclick="changeSlide(-1)">← Trước</button>
+        <button class="nav-btn" id="nextBtn" onclick="changeSlide(1)">Tiếp →</button>
+    </div>
+
+    <script>
+        let currentSlideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        document.getElementById('totalSlides').textContent = totalSlides;
+
+        function showSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[index].classList.add('active');
+            
+            document.getElementById('currentSlide').textContent = index + 1;
+            
+            // Update navigation buttons
+            document.getElementById('prevBtn').disabled = index === 0;
+            document.getElementById('nextBtn').disabled = index === totalSlides - 1;
+            
+            // Initialize chart if on overview slide
+            if (index === 1) {
+                setTimeout(initOverviewChart, 100);
+            }
+        }
+
+        function changeSlide(direction) {
+            const newIndex = currentSlideIndex + direction;
+            if (newIndex >= 0 && newIndex < totalSlides) {
+                currentSlideIndex = newIndex;
+                showSlide(currentSlideIndex);
+            }
+        }
+
+        function initOverviewChart() {
+            const ctx = document.getElementById('overviewChart');
+            if (!ctx) return;
+            
+            new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Sinh Thường', 'Mổ Lần 1', 'Mổ Lần 2', 'Mổ Lần 3'],
+                    datasets: [
+                        {
+                            label: 'BV Hạnh Phúc',
+                            data: [29.9, 39.9, 44.0, 47.6],
+                            backgroundColor: '#1a1a1a',
+                            borderColor: '#1a1a1a',
+                            borderWidth: 2
+                        },
+                        {
+                            label: 'Hoàn Mỹ Sài Gòn',
+                            data: [19.0, 23.0, 25.0, null],
+                            backgroundColor: '#666',
+                            borderColor: '#666',
+                            borderWidth: 2
+                        },
+                        {
+                            label: 'Hoàn Mỹ Thủ Đức',
+                            data: [30.1, 40.0, 41.1, null],
+                            backgroundColor: '#999',
+                            borderColor: '#999',
+                            borderWidth: 2
+                        }
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'bottom',
+                            labels: {
+                                padding: 20,
+                                font: {
+                                    size: 14
+                                }
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: '#1a1a1a',
+                            titleColor: '#ffffff',
+                            bodyColor: '#ffffff',
+                            borderColor: '#333',
+                            borderWidth: 1,
+                            cornerRadius: 6,
+                            callbacks: {
+                                label: function(context) {
+                                    return context.dataset.label + ': ' + context.parsed.y + 'M VNĐ';
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            grid: {
+                                color: '#f0f0f0',
+                                drawBorder: false
+                            },
+                            ticks: {
+                                color: '#666',
+                                font: {
+                                    size: 12
+                                },
+                                callback: function(value) {
+                                    return value + 'M';
+                                }
+                            }
+                        },
+                        x: {
+                            grid: {
+                                display: false
+                            },
+                            ticks: {
+                                color: '#666',
+                                font: {
+                                    size: 12
+                                }
+                            }
+                        }
+                    },
+                    animation: {
+                        duration: 1000,
+                        easing: 'easeInOutQuart'
+                    }
+                }
+            });
+        }
+
+        function downloadPDF() {
+            window.print();
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowLeft') {
+                changeSlide(-1);
+            } else if (e.key === 'ArrowRight') {
+                changeSlide(1);
+            }
+        });
+
+        // Initialize
+        showSlide(0);
+    </script>
+</body>
+</html>

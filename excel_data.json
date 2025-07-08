@@ -1,0 +1,442 @@
+{
+  "tong quat": [
+    {
+      "Loại Dịch Vụ": "Giá Gói Sinh Thường",
+      "BV Hạnh Phúc": 29900000,
+      "Hoàn Mỹ Sài Gòn": 19000000.0,
+      "Hoàn Mỹ Thủ Đức": 30100000.0
+    },
+    {
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 1",
+      "BV Hạnh Phúc": 39900000,
+      "Hoàn Mỹ Sài Gòn": 23000000.0,
+      "Hoàn Mỹ Thủ Đức": 40000000.0
+    },
+    {
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 2",
+      "BV Hạnh Phúc": 44000000,
+      "Hoàn Mỹ Sài Gòn": 25000000.0,
+      "Hoàn Mỹ Thủ Đức": 41100000.0
+    },
+    {
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 3",
+      "BV Hạnh Phúc": 47600000,
+      "Hoàn Mỹ Sài Gòn": NaN,
+      "Hoàn Mỹ Thủ Đức": NaN
+    }
+  ],
+  "chi tiet": [
+    {
+      "Bệnh viện": "BV Hạnh Phúc",
+      "Loại Dịch Vụ": "Giá Gói Sinh Thường",
+      "Tên Gói": "Gói Hạnh Phúc",
+      "Giá BV": 29900000,
+      "Giá BHYT": NaN
+    },
+    {
+      "Bệnh viện": "BV Hạnh Phúc",
+      "Loại Dịch Vụ": "Giá Gói Sinh Thường",
+      "Tên Gói": "Gói Cát Tường",
+      "Giá BV": 39900000,
+      "Giá BHYT": NaN
+    },
+    {
+      "Bệnh viện": "BV Hạnh Phúc",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 1",
+      "Tên Gói": "Gói Hạnh Phúc",
+      "Giá BV": 39900000,
+      "Giá BHYT": NaN
+    },
+    {
+      "Bệnh viện": "BV Hạnh Phúc",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 1",
+      "Tên Gói": "Gói Cát Tường",
+      "Giá BV": 49900000,
+      "Giá BHYT": NaN
+    },
+    {
+      "Bệnh viện": "BV Hạnh Phúc",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 2",
+      "Tên Gói": "Gói Hạnh Phúc",
+      "Giá BV": 44000000,
+      "Giá BHYT": NaN
+    },
+    {
+      "Bệnh viện": "BV Hạnh Phúc",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 2",
+      "Tên Gói": "Gói Cát Tường",
+      "Giá BV": 54000000,
+      "Giá BHYT": NaN
+    },
+    {
+      "Bệnh viện": "BV Hạnh Phúc",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 3",
+      "Tên Gói": "Gói Hạnh Phúc",
+      "Giá BV": 47600000,
+      "Giá BHYT": NaN
+    },
+    {
+      "Bệnh viện": "BV Hạnh Phúc",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 3",
+      "Tên Gói": "Gói Cát Tường",
+      "Giá BV": 57600000,
+      "Giá BHYT": NaN
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Sài Gòn",
+      "Loại Dịch Vụ": "Giá Gói Sinh Thường",
+      "Tên Gói": "Gói Vuông Tròn",
+      "Giá BV": 16000000,
+      "Giá BHYT": NaN
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Sài Gòn",
+      "Loại Dịch Vụ": "Giá Gói Sinh Thường",
+      "Tên Gói": "Gói Yêu Thương",
+      "Giá BV": 19000000,
+      "Giá BHYT": NaN
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Sài Gòn",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 1",
+      "Tên Gói": "Gói Vuông Tròn",
+      "Giá BV": 19000000,
+      "Giá BHYT": NaN
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Sài Gòn",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 1",
+      "Tên Gói": "Gói Yêu Thương",
+      "Giá BV": 23000000,
+      "Giá BHYT": NaN
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Sài Gòn",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 2",
+      "Tên Gói": "Gói Vuông Tròn",
+      "Giá BV": 21000000,
+      "Giá BHYT": NaN
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Sài Gòn",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 2",
+      "Tên Gói": "Gói Yêu Thương",
+      "Giá BV": 25000000,
+      "Giá BHYT": NaN
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Thường",
+      "Tên Gói": "Gói Bình An - P3G",
+      "Giá BV": 16000000,
+      "Giá BHYT": 14100000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Thường",
+      "Tên Gói": "Gói Yêu Thương - P2G",
+      "Giá BV": 19200000,
+      "Giá BHYT": 17700000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Thường",
+      "Tên Gói": "Gói Yêu Thương - VIP Standard",
+      "Giá BV": 23000000,
+      "Giá BHYT": 21500000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Thường",
+      "Tên Gói": "Gói Yêu Thương - P1G",
+      "Giá BV": 24000000,
+      "Giá BHYT": 22500000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Thường",
+      "Tên Gói": "Gói Yêu Thương - VIP Deluxe",
+      "Giá BV": 24500000,
+      "Giá BHYT": 23500000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Thường",
+      "Tên Gói": "Gói Hạnh Phúc - VIP Standard",
+      "Giá BV": 29100000,
+      "Giá BHYT": 27600000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Thường",
+      "Tên Gói": "Gói Hạnh Phúc",
+      "Giá BV": 30100000,
+      "Giá BHYT": 28600000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Thường",
+      "Tên Gói": "Gói Hạnh Phúc - VIP Deluxe",
+      "Giá BV": 30600000,
+      "Giá BHYT": 29100000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Thường",
+      "Tên Gói": "Gói Yêu Thương - VIP Suite",
+      "Giá BV": 31800000,
+      "Giá BHYT": 29400000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Thường",
+      "Tên Gói": "Gói Hạnh Phúc - VIP Suite",
+      "Giá BV": 39000000,
+      "Giá BHYT": 36600000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 1",
+      "Tên Gói": "Gói Bình An - P3G",
+      "Giá BV": 23800000,
+      "Giá BHYT": 21400000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 1",
+      "Tên Gói": "Gói Yêu Thương - P2G",
+      "Giá BV": 26400000,
+      "Giá BHYT": 24000000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 1",
+      "Tên Gói": "Gói Yêu Thương - VIP Standard",
+      "Giá BV": 31400000,
+      "Giá BHYT": 29400000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 1",
+      "Tên Gói": "Gói Yêu Thương - VIP Deluxe",
+      "Giá BV": 32400000,
+      "Giá BHYT": 30400000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 1",
+      "Tên Gói": "Gói Yêu Thương - P1G",
+      "Giá BV": 32800000,
+      "Giá BHYT": 30400000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 1",
+      "Tên Gói": "Gói Yêu Thương - VIP Suite",
+      "Giá BV": 34800000,
+      "Giá BHYT": 32900000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 1",
+      "Tên Gói": "Gói Hạnh Phúc",
+      "Giá BV": 40000000,
+      "Giá BHYT": 37600000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 1",
+      "Tên Gói": "Gói Hạnh Phúc - VIP Standard",
+      "Giá BV": 41000000,
+      "Giá BHYT": 38600000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 1",
+      "Tên Gói": "Gói Hạnh Phúc - VIP Deluxe",
+      "Giá BV": 42000000,
+      "Giá BHYT": 39600000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 1",
+      "Tên Gói": "Gói Hạnh Phúc - VIP Suite",
+      "Giá BV": 49000000,
+      "Giá BHYT": 46600000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 2",
+      "Tên Gói": "Gói Bình An - P3G",
+      "Giá BV": 25400000,
+      "Giá BHYT": 22400000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 2",
+      "Tên Gói": "Gói Yêu Thương - P2G",
+      "Giá BV": 27600000,
+      "Giá BHYT": 24600000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 2",
+      "Tên Gói": "Gói Yêu Thương - VIP Standard",
+      "Giá BV": 32900000,
+      "Giá BHYT": 31900000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 2",
+      "Tên Gói": "Gói Yêu Thương - P1G",
+      "Giá BV": 33900000,
+      "Giá BHYT": 30900000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 2",
+      "Tên Gói": "Gói Yêu Thương - VIP Deluxe",
+      "Giá BV": 33900000,
+      "Giá BHYT": 32900000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 2",
+      "Tên Gói": "Gói Yêu Thương - VIP Suite",
+      "Giá BV": 35900000,
+      "Giá BHYT": 34900000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 2",
+      "Tên Gói": "Gói Hạnh Phúc",
+      "Giá BV": 41100000,
+      "Giá BHYT": 38100000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 2",
+      "Tên Gói": "Gói Hạnh Phúc - VIP Standard",
+      "Giá BV": 42100000,
+      "Giá BHYT": 39100000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 2",
+      "Tên Gói": "Gói Hạnh Phúc - VIP Deluxe",
+      "Giá BV": 43100000,
+      "Giá BHYT": 40100000.0
+    },
+    {
+      "Bệnh viện": "Hoàn Mỹ Thủ Đức",
+      "Loại Dịch Vụ": "Giá Gói Sinh Mổ Lần 2",
+      "Tên Gói": "Gói Hạnh Phúc - VIP Suite",
+      "Giá BV": 50100000,
+      "Giá BHYT": 47100000.0
+    }
+  ],
+  "thong tin": [
+    {
+      "Hạng Mục So Sánh": "I. Tổng Quan Gói & Giá",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": "An Nhiên & Hạnh Phúc (Gói nhỏ hơn, không có giá Cát Tường chi tiết)",
+      "Bệnh viện Hoàn Mỹ Sài Gòn": "Gói Yêu Thương (33 hạng mục, VIP) & Gói Vuông Tròn (29 hạng mục, tiêu chuẩn)",
+      "Bệnh viện Hoàn Mỹ Thủ Đức": "Gói Hạnh phúc, Gói Yêu thương, Gói Bình an"
+    },
+    {
+      "Hạng Mục So Sánh": "Giá Sinh Thường (Tự nhiên)",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": "An Nhiên: 29.900.000 VNĐ  Hạnh Phúc: 39.900.000 VNĐ",
+      "Bệnh viện Hoàn Mỹ Sài Gòn": "Yêu Thương: 19.000.000 VNĐ  Vuông Tròn: 16.000.000 VNĐ",
+      "Bệnh viện Hoàn Mỹ Thủ Đức": "Giá dịch vụ (Phòng 1 giường):  Hạnh phúc: 30.100.000 VNĐ  Yêu thương: 24.000.000 VNĐ  Giá có BHYT (Phòng 1 giường):  Hạnh phúc: 28.600.000 VNĐ  Yêu thương: 22.500.000 VNĐ  Phòng 2 giường:  Yêu thương: 19.200.000 VNĐ (DV) / 17.700.000 VNĐ (BHYT)  Phòng 3 giường:  Bình an: 16.000.000 VNĐ (DV) / 14.100.000 VNĐ (BHYT)  Phòng VIP:  Hạnh phúc (Standard): 29.600.000 VNĐ (DV) / 27.600.000 VNĐ (BHYT)  Yêu thương (Standard): 23.500.000 VNĐ (DV) / 21.500.000 VNĐ (BHYT)"
+    },
+    {
+      "Hạng Mục So Sánh": "Giá Sinh Mổ Lần 1",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": "An Nhiên: 39.900.000 VNĐ  Hạnh Phúc: 49.900.000 VNĐ",
+      "Bệnh viện Hoàn Mỹ Sài Gòn": "Yêu Thương: 23.000.000 VNĐ  Vuông Tròn: 19.000.000 VNĐ",
+      "Bệnh viện Hoàn Mỹ Thủ Đức": "Giá dịch vụ (Phòng 1 giường):  Hạnh phúc: 40.000.000 VNĐ  Yêu thương: 32.800.000 VNĐ  Giá có BHYT (Phòng 1 giường):  Hạnh phúc: 37.600.000 VNĐ  Yêu thương: 30.400.000 VNĐ  Phòng 2 giường:  Yêu thương: 26.400.000 VNĐ (DV) / 24.000.000 VNĐ (BHYT)  Phòng 3 giường:  Bình an: 23.800.000 VNĐ (DV) / 21.400.000 VNĐ (BHYT)  Phòng VIP:  Hạnh phúc (Standard): 38.600.000 VNĐ (DV) / 36.600.000 VNĐ (BHYT)  Yêu thương (Standard): 31.400.000 VNĐ (DV) / 29.400.000 VNĐ (BHYT)"
+    },
+    {
+      "Hạng Mục So Sánh": "Giá Sinh Mổ Lần 2 (trở lên)",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": "An Nhiên: 44.000.000 VNĐ (lần 2), 47.600.000 VNĐ (lần 3)  Hạnh Phúc: 54.000.000 VNĐ (lần 2), 57.600.000 VNĐ (lần 3)",
+      "Bệnh viện Hoàn Mỹ Sài Gòn": "Yêu Thương: 25.000.000 VNĐ  Vuông Tròn: 21.000.000 VNĐ",
+      "Bệnh viện Hoàn Mỹ Thủ Đức": "Giá dịch vụ (Phòng 1 giường):  Hạnh phúc: 41.100.000 VNĐ  Yêu thương: 33.900.000 VNĐ  Giá có BHYT (Phòng 1 giường):  Hạnh phúc: 38.100.000 VNĐ  Yêu thương: 30.900.000 VNĐ  Phòng 2 giường:  Yêu thương: 27.600.000 VNĐ (DV) / 24.600.000 VNĐ (BHYT)  Phòng 3 giường:  Bình an: 25.400.000 VNĐ (DV) / 22.400.000 VNĐ (BHYT)  Phòng VIP:  Hạnh phúc (Standard): 39.100.000 VNĐ (DV) / 37.100.000 VNĐ (BHYT)  Yêu thương (Standard): 32.900.000 VNĐ (DV) / 29.900.000 VNĐ (BHYT)"
+    },
+    {
+      "Hạng Mục So Sánh": "Số Ngày Nằm Viện Chuẩn",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": "Sinh thường: 02 ngày  Sinh mổ: 03 ngày",
+      "Bệnh viện Hoàn Mỹ Sài Gòn": "Sinh thường: Tối đa 3 ngày  Sinh mổ: Tối đa 5 ngày",
+      "Bệnh viện Hoàn Mỹ Thủ Đức": "Sinh thường: 03 ngày  Sinh mổ: 04 ngày"
+    },
+    {
+      "Hạng Mục So Sánh": "Phòng Nội Trú Tiêu Chuẩn (trong gói/giá riêng)",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": "Bao gồm trong gói (Phòng Tiêu Chuẩn).  Giá phòng/đêm nếu phát sinh hoặc nâng hạng:  - Phòng Tiêu Chuẩn: 2.200.000 VNĐ  - Phòng Cao Cấp: 3.200.000 VNĐ  - Phòng VIP: 4.300.000 VNĐ",
+      "Bệnh viện Hoàn Mỹ Sài Gòn": "KHÔNG bao gồm tiền giường và dịch vụ phát sinh ngoài gói.  Giá phòng/đêm riêng:  - Khu VIP (01 giường): 4.800.000 VNĐ  - Khu thường tiêu chuẩn (01 giường): 3.600.000 VNĐ  - Khu thường tiêu chuẩn (03 giường): 1.900.000 VNĐ  - Khu thường tiêu chuẩn (05 giường): 1.300.000 VNĐ",
+      "Bệnh viện Hoàn Mỹ Thủ Đức": "Bao gồm trong gói (Phòng 1, 2, 3 giường tiêu chuẩn).  Các gói phòng VIP áp dụng theo bảng giá phòng VIP (Phòng Deluxe, Suite, Standard trong khu VIP).  Có phí phòng ngày đầu tiên sau khi hết gói nếu có bệnh lý phát sinh cho mẹ hoặc bé."
+    },
+    {
+      "Hạng Mục So Sánh": "II. Hạng Mục Dịch Vụ Chính",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": NaN,
+      "Bệnh viện Hoàn Mỹ Sài Gòn": NaN,
+      "Bệnh viện Hoàn Mỹ Thủ Đức": NaN
+    },
+    {
+      "Hạng Mục So Sánh": "Dịch Vụ Trước Sinh ",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": "- Khám tiền mê (tuần 36-38)  - Siêu âm & xét nghiệm tiền phẫu  - Theo dõi trước sinh 12 tiếng  - Kiểm tra & theo dõi trước sinh  - Điện tâm đồ, theo dõi tim thai & cơn gò",
+      "Bệnh viện Hoàn Mỹ Sài Gòn": "- Gói xét nghiệm trước khi đi sinh  - Bác sĩ theo dõi dấu hiệu chuyển dạ  - Theo dõi tim thai và cơn gò  - Khám tiền mê  - Xét nghiệm & chẩn đoán hình ảnh (siêu âm 2D, ECG, CTG)",
+      "Bệnh viện Hoàn Mỹ Thủ Đức": "Bao gồm trong gói (không liệt kê chi tiết cụ thể như Hạnh Phúc Quốc Tế nhưng thuộc các dịch vụ cơ bản của gói sinh)."
+    },
+    {
+      "Hạng Mục So Sánh": "Dịch Vụ Trong Sinh ",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": "- Thuốc, dịch truyền, vật tư y tế (hạn mức 3tr sinh thường, 7.5tr sinh mổ)  - Phí bác sĩ đỡ sinh  - 01 người thân vào phòng sinh",
+      "Bệnh viện Hoàn Mỹ Sài Gòn": "- Sinh thường/Sinh mổ  - Bác sĩ Sản Nhi và Nữ hộ sinh đón bé  - Chi phí phòng sinh/phẫu thuật  - Vật tư tiêu hao & trang thiết bị cần thiết  - Dụng cụ sản khoa  - Dịch vụ gây mê (khám, thuốc, phòng tiền mê, gây tê cột sống/các loại khí y tế)  - Thuốc, dịch truyền & vật tư y tế",
+      "Bệnh viện Hoàn Mỹ Thủ Đức": "- Giảm đau khi sinh bằng gây tê ngoài màng cứng  - Gây tê ngoài màng cứng giảm đau sau mổ  - Phòng sinh gia đình, phí yêu cầu bác sĩ nội viện, phí chọn giờ phẫu thuật (bao gồm trong gói)"
+    },
+    {
+      "Hạng Mục So Sánh": "Dịch Vụ Sau Sinh ",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": "- Bữa ăn theo thực đơn (3 bữa chính, 1 phụ sáng, 1 phụ tối/ngày)  - Combo đồ dùng cho mẹ và bé  - Khám hậu sản cho mẹ",
+      "Bệnh viện Hoàn Mỹ Sài Gòn": "- Chăm sóc cuống rốn sau sinh  - Bác sĩ Sản thăm khám mẹ mỗi ngày  - Vệ sinh tầng sinh môn  - Thay băng  - Nước uống, nước nóng hằng ngày  - Cơm phần cho mẹ (3 bữa/ngày), trà, cà phê  - Vệ sinh tầng sinh môn và chăm sóc vết mổ cho mẹ  - Bộ vật dụng cá nhân khi nhập viện  - Nước uống",
+      "Bệnh viện Hoàn Mỹ Thủ Đức": "- Điều trị tắc tia sữa  - Chiếu tia Plasma"
+    },
+    {
+      "Hạng Mục So Sánh": "Dịch Vụ Chăm Sóc Bé ",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": "- Chăm sóc bé mỗi đêm (19:00 - 07:00)  - Tắm bé và chăm sóc rốn  - Tiêm vắc-xin BCG & viêm gan B cho bé  - Tiêm vitamin K cho bé  - Khám sức khỏe trẻ sơ sinh (trong 30 ngày sau sinh)  - Tầm soát 73 bệnh cho trẻ sơ sinh (miễn phí)  - Siêu âm tầm soát tim sơ sinh cho bé (miễn phí)",
+      "Bệnh viện Hoàn Mỹ Sài Gòn": "- Tiêm vitamin K cho bé  - Tắm bé  - Bác sĩ Nhi thăm khám bé  - Giường dưỡng nhi  - Tiêm ngừa lao, viêm gan B  - Sàng lọc sau sinh (Gói 05 bệnh Babysure, đo Bilirubin qua da, sàng lọc thính lực OAE, sàng lọc tim bẩm sinh SpO2)  - Nôi cho bé (khi có yêu cầu)  - Chích ngừa lao, viêm gan B, tiêm vitamin K cho bé sau sinh  - Tắm và vệ sinh rốn cho bé sơ sinh mỗi ngày  - 01 bộ quần áo sơ sinh",
+      "Bệnh viện Hoàn Mỹ Thủ Đức": "- Tầm soát thính lực sơ sinh  - Siêu âm tim nhi qua thành ngực  - Đo vàng da, chiếu vàng da sơ sinh theo ngày  - Bấm lỗ tai cho bé  - Phòng NICU (bao gồm trong gói)"
+    },
+    {
+      "Hạng Mục So Sánh": "III. Chính Sách & Ưu Đãi",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": NaN,
+      "Bệnh viện Hoàn Mỹ Sài Gòn": NaN,
+      "Bệnh viện Hoàn Mỹ Thủ Đức": NaN
+    },
+    {
+      "Hạng Mục So Sánh": "Dịch Vụ Cộng Thêm/Ưu Đãi Đặc Biệt",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": "- Giảm 20% các dịch vụ khác sử dụng trong quá trình lưu viện  - Gói quay chụp “Hành trình Hạnh Phúc” (sinh mổ)  - Chiếu tia Plasma lạnh (02 lần)  - Gói Spa cho mẹ (01 buổi gội đầu, 01 buổi massage cổ vai gáy)  - Ưu tiên nâng hạng phòng  - Lớp học chăm sóc bé (trong thời gian nằm viện)  - Nhân viên hỗ trợ hành lý  - Thủ tục xuất viện tại phòng",
+      "Bệnh viện Hoàn Mỹ Sài Gòn": "- Tặng kèm gói sàng lọc dị tật bẩm sinh cho bé  - Dịch vụ đón sản phụ đến bệnh viện bằng xe cấp cứu trong khu vực dưới 5km khi có dấu hiệu chuyển dạ  - Ưu đãi chỉ áp dụng khi đăng ký Online (không bao gồm offline)  ",
+      "Bệnh viện Hoàn Mỹ Thủ Đức": "- Giảm 10% cho các dịch vụ phát sinh ngoài gói  - Chương trình ưu đãi khi đăng ký gói sinh sớm theo tuần thai (giảm từ 500.000 VNĐ đến 2.000.000 VNĐ tùy gói và tuần thai)"
+    },
+    {
+      "Hạng Mục So Sánh": "Chính Sách Người Thân Ở Lại/Phí Phát Sinh Phòng",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": "- Phụ thu 550.000 VNĐ/đêm/người (bao gồm 3 bữa ăn/ngày và kê thêm giường).  - Phòng Tiêu Chuẩn 2 giường: Tối đa 1 người thân (trẻ <12 tuổi: tối đa 2 người).  - Phòng Deluxe, VIP: Tối đa 2 người thân (trẻ <12 tuổi: tối đa 3 người).  - Phòng Cao Cấp/VIP có tiện nghi cho người thân (sofa giường, bàn ăn riêng, miễn phí ở lại 01 người với 3 bữa ăn).",
+      "Bệnh viện Hoàn Mỹ Sài Gòn": "Không có thông tin",
+      "Bệnh viện Hoàn Mỹ Thủ Đức": "Không có thông tin"
+    },
+    {
+      "Hạng Mục So Sánh": "Các Lưu Ý/Dịch Vụ Phát Sinh Khác",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": "- Giá gói chưa bao gồm dịch vụ, thuốc, vật tư phát sinh theo chỉ định y tế đặc biệt.  - Các dịch vụ phát sinh thường gặp có giá riêng và được giảm 20% khi mua gói (ví dụ: điều trị tắc tia sữa, chiếu Plasma lần sau, xông hơi tầng sinh môn, chọn bác sĩ/giờ sinh, khám dinh dưỡng, massage kích sữa, gây tê ngoài màng cứng).  - Dịch vụ phát sinh cho bé (đo vàng da, vật lý trị liệu, chiếu đèn 24h, tắm bé ngoài gói, tầm soát 5 bệnh, tầm soát 73 bệnh lần 2, tầm soát tim bẩm sinh, kiểm tra thính lực, chăm sóc tại nhà sau sinh 7 ngày, xét nghiệm nhóm máu).  - Chi phí nâng hạng phòng (Tiêu chuẩn -> Cao cấp/VIP) không áp dụng giảm giá.  - Phí dịch vụ mổ chọn giờ áp dụng ngoài giờ hành chính, Lễ/Tết, hoặc theo yêu cầu chọn giờ.  - Quy định thăm bệnh: Tối đa 02 người thân/lần thăm. Giờ thăm 10h-14h; 16h-20h. Khoa hồi sức: 11h-12h.",
+      "Bệnh viện Hoàn Mỹ Sài Gòn": "- Giá gói KHÔNG BAO GỒM TIỀN GIƯỜNG VÀ CÁC DỊCH VỤ PHÁT SINH NGOÀI GÓI.  - Đối tượng: Mẹ và bé có thể trạng sức khỏe bình thường.",
+      "Bệnh viện Hoàn Mỹ Thủ Đức": "- Giá gói áp dụng cho bệnh nhân có thẻ BHYT (không phân biệt mức hưởng).  - Khách hàng có thể chuyển nhượng gói sinh đã mua (chưa sử dụng).  - Khách hàng có thể nâng cấp gói sinh (từ thấp lên cao).  - Trường hợp được hoàn trả cọc (100%) là các trường hợp khách quan/bất khả kháng hoặc vượt quá chuyên môn của bệnh viện (ví dụ: sinh cấp cứu BV khác, BV không đón kịp).  - Thời gian hoàn trả cọc: Không quá 30 ngày từ ngày dự sinh/ra viện."
+    },
+    {
+      "Hạng Mục So Sánh": "Chính Sách Đặt Cọc",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": "Không có thông tin",
+      "Bệnh viện Hoàn Mỹ Sài Gòn": "Khi đăng ký gói sinh, mẹ bầu chuyển khoản đặt cọc 1 triệu đồng hoặc đặt cọc tại Phòng Kế toán bệnh viện.",
+      "Bệnh viện Hoàn Mỹ Thủ Đức": "Thanh toán đặt cọc trước 2.000.000 VNĐ áp dụng cho tất cả các gói sinh.  Chiết khấu sẽ được hoàn trả khi khách hàng đến sinh và xuất viện, mức chiết khấu tính dựa vào tuần tuổi thai và loại gói.  Có 2 hình thức thanh toán: Online (TK ngân hàng BV) hoặc tiền mặt."
+    },
+    {
+      "Hạng Mục So Sánh": "Thời Gian Áp Dụng/Hiệu Lực",
+      "Bệnh viện Đa khoa Quốc tế Hạnh Phúc": "Áp dụng cho khách hàng từ ngày 15.12.2024.  Giá có thể thay đổi và cập nhật.  Quy định thăm bệnh có hiệu lực từ 18/06/2024.",
+      "Bệnh viện Hoàn Mỹ Sài Gòn": "Từ tháng 12/2023 đến hết tháng 03/2024.",
+      "Bệnh viện Hoàn Mỹ Thủ Đức": "Áp dụng kể từ ngày 01/06/2025 cho đến khi có thông báo mới.  Chính sách đặt cọc có hiệu lực từ 10/08/2024 trở đi."
+    }
+  ]
+}
