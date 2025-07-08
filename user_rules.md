@@ -262,6 +262,7 @@ Document này định nghĩa **khi nào** và **như thế nào** sử dụng t�
 - Tạo **knowledge base** từ multiple sources
 - **Q&A system** cho documents
 - **Content analysis** và insights
+- **⚠️ CHỈ SỬ DỤNG SAU KHI ĐÃ THỬ EXCEL MCP** cho file Excel
 
 #### 🛠️ Tools chính:
 - `promptConversation` - Chat với knowledge base
@@ -270,8 +271,34 @@ Document này định nghĩa **khi nào** và **như thế nào** sử dụng t�
 - `queryContents` - Query metadata
 - `createCollection` - Tổ chức content
 
-### 🐙 **GitHub MCP** - Git repository management
+### 📋 **TaskManager MCP** - Project task management ⚠️ CÓ VẤN ĐỀ SCHEMA
 
+#### ⚠️ **TRẠNG THÁI**: KHẢ DỤNG NHƯNG CÓ VẤN ĐỀ SCHEMA
+- **Tình trạng**: MCP server phản hồi nhưng schema khác với documentation
+- **Vấn đề**: Input parameters không match với expected schema
+- **Khuyến nghị**: Cần research thêm về correct schema hoặc sử dụng manual task tracking
+
+#### 🎯 Khi nào SỬ DỤNG:
+- **Complex projects** với nhiều tasks
+- **Team collaboration** và task assignment
+- **Progress tracking** và reporting
+- **Workflow automation** cho repetitive tasks
+
+#### 🛠️ Tools chính (cần verify schema):
+- `request_planning` - Lập kế hoạch project
+- `get_next_task` - Lấy task tiếp theo
+- `mark_task_done` - Đánh dấu hoàn thành
+- `approve_task_completion` - Approve task
+- `list_requests` - Liệt kê tất cả requests
+
+#### 🔄 Auto-trigger rules:
+- Khi user mention "task management", "project planning"
+- Khi cần organize complex workflows
+- **LƯU Ý**: Test schema trước khi sử dụng
+
+### 🐙 **GitHub MCP** - Git repository management ✅ KHẢ DỤNG
+
+#### ✅ **TRẠNG THÁI**: MCP server hoạt động bình thường
 #### 🎯 Khi nào SỬ DỤNG:
 - **Deploy project** lên GitHub
 - **Backup code** và version control
@@ -284,10 +311,12 @@ Document này định nghĩa **khi nào** và **như thế nào** sử dụng t�
 - `create_repository` - Tạo repo mới
 - `push_files` - Upload multiple files
 - `create_issue` - Tạo issue tracking
+- `search_repositories` - Tìm kiếm repositories
 - `search_code` - Tìm kiếm code
-- `create_pull_request` - Code review workflow
+- `create_pull_request` - Tạo pull request
+- `get_file_contents` - Đọc file từ repo
 
-### 🎭 **Puppeteer MCP** - Web automation & testing
+### 🎭 **Puppeteer MCP** - Web automation & testing ✅ KHẢ DỤNG
 
 #### 🎯 Khi nào SỬ DỤNG:
 - **Test web applications** tự động
@@ -296,37 +325,28 @@ Document này định nghĩa **khi nào** và **như thế nào** sử dụng t�
 - **Automated interactions** với web forms
 - **Performance testing** web pages
 - **Generate reports** từ web data
+- **Browser automation** cho testing và demo
 
 #### 🛠️ Tools chính:
 - `puppeteer_navigate` - Điều hướng URL
 - `puppeteer_screenshot` - Chụp màn hình
 - `puppeteer_click` - Click elements
 - `puppeteer_fill` - Fill forms
+- `puppeteer_select` - Select dropdown options
+- `puppeteer_hover` - Hover elements
 - `puppeteer_evaluate` - Execute JavaScript
-
-### 📚 **Context7 & TaskManager MCP**
-
-#### Context7 - Library documentation:
-- **Documentation** cho libraries/packages
-- **Resolve dependencies** và compatibility
-- **Best practices** cho specific libraries
-
-#### TaskManager - Project management:
-- **Complex projects** cần task breakdown
-- **Team collaboration** và task assignment
-- **Progress tracking** và reporting
 
 ### 🎯 **DECISION MATRIX** - Khi nào dùng MCP nào?
 
-| Tình huống | MCP được ưu tiên | Lý do |
-|------------|------------------|-------|
-| File .xlsx trong project | **Excel** | Specialized Excel handling |
-| Cần PDF/DOCX output | **Pandoc** | Professional document conversion |
-| Multiple documents analysis | **Graphlit** | AI-powered content understanding |
-| Web app testing | **Puppeteer** | Browser automation |
-| Code backup/sharing | **GitHub** | Version control & collaboration |
-| Complex project | **TaskManager** | Structured project management |
-| Library questions | **Context7** | Technical documentation |
+| Tình huống | MCP được ưu tiên | Lý do | Trạng thái |
+|------------|------------------|-------|------------|
+| File .xlsx trong project | **Excel** | Specialized Excel handling | ✅ KHẢ DỤNG |
+| Cần PDF/DOCX output | **Pandoc** | Professional document conversion | ✅ KHẢ DỤNG |
+| Multiple documents analysis | **Graphlit** (sau Excel) | AI-powered content understanding | ✅ KHẢ DỤNG |
+| Web app testing | **Puppeteer** | Browser automation | ✅ KHẢ DỤNG |
+| Code backup/sharing | **GitHub** | Version control & collaboration | ✅ KHẢ DỤNG |
+| Complex project | **TaskManager** (⚠️) | Structured project management | ⚠️ CÓ VẤN ĐỀ SCHEMA |
+| Library questions | **Context7** (⚠️) | Up-to-date technical documentation | ⚠️ CẦN CẤU HÌNH |
 
 ### 🚀 **AUTO-TRIGGER RULES** - Tự động kích hoạt
 
@@ -348,6 +368,7 @@ THEN use Pandoc MCP
 ```
 IF (multiple_documents_present == true)
    AND (user_asks == "tìm kiếm" OR "so sánh" OR "phân tích nội dung")
+   AND (Excel_MCP_already_tried == true OR file_extension != ".xlsx")
 THEN use Graphlit MCP
 ```
 
@@ -358,33 +379,114 @@ IF (file_type == ".html" OR web_app_present == true)
 THEN use Puppeteer MCP
 ```
 
+#### 🐙 GitHub MCP auto-triggers:
+```
+IF user_mentions == ("GitHub" OR "repository" OR "repo" OR "backup" OR "deploy")
+   OR (user_requests == "version control" OR "collaboration" OR "share code")
+THEN use GitHub MCP
+```
+
+#### 📚 Context7 MCP auto-triggers:
+```
+IF user_mentions == ("documentation" OR "library" OR "package" OR "API" OR "examples")
+   OR (user_requests == "how to use" OR "best practices" OR "latest version")
+   OR (code_mentions == specific_library_names)
+THEN add "use context7" to prompt
+```
+
 ### 💡 **MCP BEST PRACTICES**
 
 #### 🔄 Workflow optimization:
 1. **Analyze context** trước khi chọn MCP
-2. **Combine MCPs** khi cần (Excel → Pandoc → GitHub)
-3. **Cache results** để tránh duplicate calls
-4. **Error handling** cho mỗi MCP call
+2. **Prioritize Excel MCP** cho file Excel trước khi thử Graphlit
+3. **Combine MCPs** khi cần (Excel → Pandoc)
+4. **Cache results** để tránh duplicate calls
+5. **Error handling** cho mỗi MCP call
+6. **Fallback strategies** cho MCP không khả dụng
 
 #### 📊 Performance tips:
 1. **Excel MCP**: Sử dụng pagination cho large datasets
 2. **Pandoc MCP**: Batch convert multiple files
 3. **Graphlit MCP**: Create collections để organize content
-4. **GitHub MCP**: Push multiple files trong 1 commit
+4. **GitHub MCP**: Sử dụng batch operations với push_files cho multiple files
+5. **Context7 MCP**: Thêm "use context7" vào prompt để get latest docs
+6. **TaskManager MCP**: ⚠️ Test schema trước khi sử dụng
 
 #### 🎯 User experience:
 1. **Explain** tại sao chọn MCP cụ thể
 2. **Show progress** cho long-running operations
-3. **Provide alternatives** nếu MCP không available
-4. **Suggest improvements** dựa trên MCP capabilities
+3. **Provide alternatives** khi MCP không available
+4. **Suggest improvements** dựa trên MCP capabilities khả dụng
+5. **Clear status** về MCP nào hoạt động/không hoạt động
 
 #### 🔧 **TROUBLESHOOTING**
 - **Pandoc PDF**: Cần cài TeX Live
 - **Excel large files**: Sử dụng pagination
 - **Graphlit setup**: Cần configure project trước
-- **GitHub auth**: Check permissions
-- **Puppeteer timeout**: Increase wait times
+- ~~GitHub auth~~: ❌ MCP không khả dụng
+- **Puppeteer timeout**: Increase wait times, check selectors
+- **Alternative tools**: Sử dụng run_command cho git operations
 
 ---
 
-*Những quy tắc này áp dụng cho mọi dự án, đảm bảo consistency, quality và user experience tối ưu theo triết lý "Less, but better" của Jony Ive và Steve Jobs, kết hợp với nghiên cứu behavioral psychology hiện đại và tối ưu hóa việc sử dụng MCP servers.*
+### 📋 **MCP AVAILABILITY STATUS** - Cập nhật 2024
+
+#### ✅ **KHẢ DỤNG**:
+- **Excel MCP** (`mcp.config.usrlocalmcp.Excel`) - Full functionality
+- **Pandoc MCP** (`mcp.config.usrlocalmcp.Pandoc`) - Full functionality  
+- **Graphlit MCP** (`mcp.config.usrlocalmcp.Graphlit`) - Full functionality
+- **Puppeteer MCP** (`mcp.config.usrlocalmcp.Puppeteer`) - Full functionality
+- **GitHub MCP** (`mcp.config.usrlocalmcp.GitHub`) - Full functionality
+- **Context7 MCP** - ⚠️ Đã cài package nhưng chưa config trong Trae
+
+#### ⚠️ **KHẢ DỤNG NHƯNG CÓ VẤN ĐỀ**:
+- **TaskManager MCP** (`mcp.config.usrlocalmcp.TaskManager`) - Available with schema issues
+- **Context7 MCP** - Package đã cài nhưng cần cấu hình trong Trae MCP settings
+
+#### ❌ **KHÔNG KHẢ DỤNG**:
+- Hiện tại tất cả MCP servers chính đều khả dụng
+
+### 📚 **Context7 MCP** - Up-to-date library documentation ⚠️ CẦN CẤU HÌNH
+
+#### 🎯 Khi nào SỬ DỤNG:
+- Cần **documentation** mới nhất cho libraries/packages
+- **Resolve dependencies** và compatibility issues
+- **Best practices** cho specific libraries/frameworks
+- **Code examples** up-to-date từ official sources
+- **API references** cho latest versions
+- Tránh **hallucinated APIs** và outdated examples
+
+#### 🛠️ Cách cài đặt trong Trae:
+1. **Add manually** trong Trae MCP settings
+2. **Remote Server Connection**:
+```json
+{
+  "mcpServers": {
+    "context7": {
+      "url": "https://mcp.context7.com/mcp"
+    }
+  }
+}
+```
+3. **Local Server Connection**:
+```json
+{
+  "mcpServers": {
+    "context7": {
+      "command": "npx",
+      "args": ["-y", "@upstash/context7-mcp"]
+    }
+  }
+}
+```
+
+#### ✅ Package đã cài: `npx -y @upstash/context7-mcp`
+#### ⚠️ Cần: Cấu hình trong Trae MCP settings
+
+#### 🔄 **ALTERNATIVES**:
+- **TaskManager**: Có thể thử nghiệm nhưng cần cẩn thận với schema, hoặc sử dụng manual task tracking
+- **Project management**: Sử dụng built-in tools và file organization khi TaskManager có vấn đề
+
+---
+
+*Những quy tắc này áp dụng cho mọi dự án, đảm bảo consistency, quality và user experience tối ưu theo triết lý "Less, but better" của Jony Ive và Steve Jobs, kết hợp với nghiên cứu behavioral psychology hiện đại và tối ưu hóa việc sử dụng MCP servers khả dụng.*
